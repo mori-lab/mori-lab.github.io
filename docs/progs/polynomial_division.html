@@ -33,7 +33,7 @@ $$
 a_n = \sum_{i=1}^k c_i a_{n-i}
 $$
 が任意の $n\ge k$ について成り立つことを言う。
-線形漸化式の母関数は形式的冪級数として
+数列の母関数は形式的冪級数として
 $$
 G(x) := \sum_{i\ge 0} a_i x^i
 $$
@@ -44,7 +44,7 @@ $$
 G(x) = \frac{P(x)}{Q(x)}
 $$
 となる。また、逆に高々 $k-1$ 次の多項式 $P(x)$ と$k$ 次の多項式 $Q(x)$ が $Q(0)=1$ を満たし、$G(x) = P(x)/Q(x)$ となるとき、
-$G(x)$ が $k+1$ 項間線形漸化式の母関数となることは $G(x)Q(x)$ の $k$ 次以上が0になることから簡単に確認できる。
+$G(x)$ が $k+1$ 項間線形漸化式を満たす数列の母関数となることは $G(x)Q(x)$ の $k$ 次以上が0になることから簡単に確認できる。
 
 形式的羃級数 $G(x)$ の偶数次数(または奇数次数)だけからなる形式的羃級数は $\mathcal{E}(G(x)) := (G(x) + G(-x))/2$ (または $\mathcal{O}(G(x)) := (G(x) - G(-x))/2$) である。
 
@@ -124,84 +124,6 @@ $$
 また、$f_e(x):=f(2x)$, $f_o(x):=f(2x+1)$ について、
 -->
 
-<h1>多項式剰余の $n$ 次までのすべての項の計算</h1>
-同様の設定で
-$$
-\frac{P(x)}{Q(x)}
-$$
-の $n$ 次以下の係数をすべて計算する問題を考えることもできる <a href="#fn-partition" id="#r-partition">[1]</a>。
-上記のアルゴリズムと同様の手法で $O(n\log n)$ 時間で計算ができる。
-$Q_0(x) := Q(x)$ とおき、$Q_{i+1}(x^2) := Q_i(x)Q_i(-x)$ と定義する。すると、
-$$
-\frac{P(x)}{Q(x)}
-=\frac{P(x)Q_0(-x) Q_1(-x^2) Q_2(-x^4)\dotsm Q_t(-x^{2^t})}{Q_{t+1}(x^{2^{t+1}})}
-$$
-が成り立つ。ここで、$2^{t+1} > n$ であれば、分母を考慮する必要がないので、$n$ 次以下の項は分子の計算で得られる。多項式の乗算をしながら、高次の項を捨てていけばよい。
-素朴には$O(n(\log n)^2)$ 時間かかりそうだが、少し工夫すれば $O(n\log n)$ で計算できる <a href="#fn-partition" id="#r-partition">[1]</a>。
-また、別の手法として <a href="http://codeforces.com/blog/entry/12513">Codeforces Round #250 Editorial (438E)</a> もある。
-もう少し最適化されたアルゴリズムが Madhu Sudan の2012年のレクチャーノートにある <a href="#fn-sudan" id="#r-sudan">[2]</a>。
-今、$P(0)\ne 0$ である多項式 $P(x)$ について $R_n(x) P(x) = 1 \mod x^n$ となる $R_n(x)$を見つけたいとする。
-$R_1(x) = P(0)^{-1}$ は自明である。
-$R_k(x)$ が得られていると仮定して $R_{2k}(x)$を計算することを考える。
-多項式 $P(x)$ を $P(x) = P_L(x) + x^k P_H(x) \mod x^{2k}$ と高々 $k-1$ 次の多項式 $P_L(x)$ と $P_H(x)$ に分解する。
-仮定より、$R_k(x)P_L(x) = 1 + x^k S(x) \mod x^{2k}$ となる高々 $k-1$ 次の多項式 $S(x)$ が存在する。
-高々 $k-1$ 次の多項式 $U(x)$ について $R_{2k}(x) = R_k(x) + x^k U(x)$ となるので、
-$$
-R_{2k}(x) P(x) = R_k(x)P(x) + x^k U(x) P(x) = 1 + x^k (S(x) + R_k(x) P_H(x) + U(x) P(x)) \mod x^{2k}
-$$
-を満たす。
-よって、
-$$
-U(x) = -\frac{S(x)+R_k(x)P_H(x)}{P(x)} = -R_k(x)(S(x) + R_k(x)P_H(x)) \mod x^k
-$$
-が得られる。1ステップに3回高々 $k-1$ 次の多項式の乗算をするので、時間計算量は $T(n) = T(n/2) + cn\log n = O(n\log n)$ となる。
-最初のアルゴリズムと比べてどちらががより高速かを調べるためには、より詳細な解析及び具体的な実装をする必要がある。
-
-<h1>多項式の商と剰余の計算</h1>
-以下 Madhu Sudan の2012年のレクチャーノートにある内容である <a href="#fn-sudan">[2]</a>。
-多項式 $P(x)$ と $Q(x)\ne 0$ について
-$$
-P(x) = A(x) Q(x) + B(x)
-$$
-を満たす多項式 $A(x)$ と高々 $\deg(Q)-1$ 次の多項式 $B(x)$ をもとめたい(解が一意であることは簡単に確認できる)。
-$\deg(P)<\deg(Q)$ の場合は $A(x) = 0$ となるので、$\deg(P)\ge \deg(Q)$ の場合のみ考えればよい。
-$n$次多項式 $P(x) = \sum_{i=0}^n p_i x^i$ ($p_n\ne 0$)について $\mathrm{Rev}(P(x)) := x^nP(1/x) = \sum_{i=0}^n p_{n-i} x^{i}$ と定義する。
-すると、$\mathrm{Rev}(P(x)Q(x))=\mathrm{Rev}(P(x))\mathrm{Rev}(Q(x))$ 及び、$\deg(P(x)) > \deg(Q(x))$ のとき、$\mathrm{Rev}(P(x) + Q(x)) = \mathrm{Rev}(P(x)) + x^{\deg(P)-\deg(Q)}\mathrm{Rev}(Q(x))$
-が成り立つ。よって、
-$$
-\begin{align*}
-\mathrm{Rev}(P(x)) &= \mathrm{Rev}(A(x) Q(x) + B(x))\\
-&= \mathrm{Rev}(A(x))\mathrm{Rev}(Q(x)) + x^{\deg(P)-\deg(B)}\mathrm{Rev}(B(x))
-\end{align*}
-$$
-が得られる。よって $\deg(B) \le \deg(Q)-1$ より
-$$
-\begin{align*}
-\mathrm{Rev}(P(x)) &= \mathrm{Rev}(A(x))\mathrm{Rev}(Q(x)) \mod x^{\deg(P)-\deg(Q)+1}\\
-\iff
-\mathrm{Rev}(A(x)) &= \frac{\mathrm{Rev}(P(x))}{\mathrm{Rev}(Q(x))} \mod x^{\deg(P)-\deg(Q)+1}
-\end{align*}
-$$
-より、上記のアルゴリズムを用いることで $m:=\deg(P)-\deg(Q)+1$について $O(m\log m)$ 時間で $A(x)$ が計算できる。
-多項式の商と剰余の計算は非常に有用で、$n$ 次多項式の $n$ 点での評価を $O(n(\log n)^2)$ 時間ですることや $n+1$ 点の評価値から $n$ 次多項式を $O(n(\log n)^2)$ 時間で復元することに使える <a href="#fn-sudan">[2]</a>。
-</section>
-<section>
-<h2>脚注</h2>
-<p id="fn-partition"><a href="#r-partition">[1]</a>
-<cite>
- Neil Calkin, Jimena Davis, Kevin James, Elizabeth Perez and Charles Swannack,
-&ldquo;Computing the Integer Partition Function,&rdquo;
-Mathematics of Computation, Vol. 76, No. 259 (Jul., 2007), pp. 1619&ndash;1638 
-<a href="https://www.jstor.org/stable/40234446">https://www.jstor.org/stable/40234446</a>.
-</cite>
-</p>
-<p id="fn-sudan"><a href="#r-sudan">[2]</a>
-<cite>
-Madhu Sudan, Algebra and Computation (Course in MIT at 2012), Lecture06
-<a href="http://people.csail.mit.edu/madhu/ST12/">http://people.csail.mit.edu/madhu/ST12/</a>.
-</cite>
-</p>
-</section>
 </main>
 <hr/>
 <footer>
