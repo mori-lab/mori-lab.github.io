@@ -1,0 +1,30 @@
+---
+layout: qal
+title: Quantum Algorithms and Lower bounds
+---
+
+Workshop on Quantum Algorithms and Lower bounds
+================
+
+Date and venue
+----------------
+13--14 Feb. 2020
+
+W1008 Building West 8 10F, Ookayama Campus, Tokyo Institute of Technology
+([access](https://www.titech.ac.jp/english/maps/ookayama/ookayama.html), Entrance is at #19 of West area)
+
+Speakers
+----------------
+* Alexandru Gheorghiu (California Institute of Technology)
+* Robert T. König (Technical University of Munich)
+* Francois Le Gall (Nagoya University)
+* Ryuhei Mori (Tokyo Institute of Technology), Organizer
+* Tomoyuki Morimae (Kyoto University)
+* Ansis Rosmanis (Nagoya University)
+* Kazuya Shimizu (Tokyo Institute of Technology)
+* Seiichiro Tani (NTT Corporation)
+* Jevgēnijs Vihrovs (University of Latvia)
+
+Schedule
+----------------
+TBA.
