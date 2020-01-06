@@ -1,9 +1,9 @@
 ---
 layout: qal
-title: Quantum Algorithms and Lower bounds
+title: Quantum Algorithms and Lower Bounds
 ---
 
-Workshop on Quantum Algorithms and Lower bounds
+Workshop on Quantum Algorithms and Lower Bounds
 ================
 
 Date and venue
@@ -17,7 +17,7 @@ Speakers
 ----------------
 * Alexandru Gheorghiu (California Institute of Technology)
 * Robert T. König (Technical University of Munich)
-* Francois Le Gall (Nagoya University)
+* François Le Gall (Nagoya University)
 * Ryuhei Mori (Tokyo Institute of Technology), Organizer
 * Tomoyuki Morimae (Kyoto University)
 * Ansis Rosmanis (Nagoya University)
