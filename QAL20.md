@@ -11,7 +11,7 @@ Date and venue
 13--14 Feb. 2020
 
 W1008 Building West 8 10F, Ookayama Campus, Tokyo Institute of Technology
-([access](https://www.titech.ac.jp/english/maps/ookayama/ookayama.html), Entrance is at #19 of West area)
+([access](https://www.titech.ac.jp/english/maps/ookayama/ookayama.html), The entrance is at #19 of West area)
 
 Speakers
 ----------------
