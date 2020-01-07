@@ -47,4 +47,12 @@ Abstract:
 The subject of this talk will be quantum distributed computing, i.e., distributed computing when the processors of the network can exchange quantum information. After describing the basics of distributed computing, I will explain a result obtained with Frédéric Magniez (arXiv:1804.02917) on quantum algorithms computing the diameter of the network. I will then present others results (arXiv:1810.10838 and arXiv:1908.11488) that show separations between the computational powers of quantum and classical distributed algorithms in several fundamental models of distributed computing. I will conclude my talk by mentioning interesting and important open questions in quantum distributed computing.
 
 
+### Tomoyuki Morimae (Kyoto University)
 
+Title: Fine-grained quantum supremacy
+
+Abstract: It is known that several sub-universal quantum computing models, such as the Boson sampling model, IQP model,
+and the one-clean qubit model, are hard to classically sample unless the polynomial hierarchy collapses.
+All these results, however, prohibit only polynomial-time classical simulations. In this talk, we show impossibilities of
+classically simulating quantum computing even in some exponential time assuming several fine-grained complexity conjectures
+such as SETH.
