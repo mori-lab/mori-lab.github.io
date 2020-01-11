@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>AGC041D</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+<style>
+<!--
+  body { width:1000px; margin-left: auto; margin-right: auto; }
+  td   { border: 1px solid black; }
+  pre  { font-family: monospace; }
+-->
+</style>
+</head>
+<body>
+<header>
+</header>
+<main>
+<section>
+<h1>AGC041-D</h1>
+<p><a href="https://atcoder.jp/contests/agc041/tasks/agc041_d">問題文</a></p>
+Editorial によると$N$が偶数のとき
+$$
+[q^{N-1}]\, \frac1{(1-q)[(1-q)(1-q^2)\dotsm(1-q^{N/2})]^2} \mod M
+$$
+$N$が奇数のとき
+$$
+[q^{N-1}]\, \frac1{(1-q)[(1-q)(1-q^2)\dotsm(1-q^{(N-1)/2})]^2(1-q^{(N+1)/2})} \mod M
+$$
+が解となる。
+とても綺麗な母関数なので最初から形式的べき級数を用いた解法を考えたくなる。
+以下その導出をする。行間はかなり広め。
+<h1>導出</h1>
+以下簡単のために$N$は偶数とする。
+$M$で割った余りをとることについては考えない。
+$A_N,\cdots,A_1$ を並べたヤング図形について考える。
+<pre>
+□□□□□□□□□
+□□□□□□□
+□□□□□□□
+□□□□□□
+□□□□□
+□□□□
+</pre>
+上から $N/2-1$ 行の和が下から $N/2$ 行の和よりも小さくなるようなヤング図形の個数が解である。
+$A_{N/2}$ を $k$ と置いて場合分けする。
+<pre>
+■■■■■■□□□
+■■■■■■□
+■■■■■■□
+■■■■■■
+□□□□□
+□□□□
+</pre>
+そうすると図の■の部分が確定し、□の部分の数え上げをすればよいことが分かる。
+<pre>
+■■■■■■◆◆◆
+■■■■■■◆
+■■■■■■□
+■■■■■■
+□□□□□◇
+□□□□◇◇
+</pre>
+図の ◇ の個数を $s$,  ◆ の個数を $t$ と置くと $s+t < k$ を満たす $N$ 行高々 $N$ 列のヤング図形の個数を数えればよい。
+$A(s, n, m)$ を $n$ 未満の正整数を $m$ 未満個使った $s$ の分割の個数とおき($n$ と $m$ は交換してもよい)、
+$B(t, n, m)$ を $n-1$ だけ2種類ある $n$ 未満の正整数を $m$ 未満個使った $s$ の分割の個数とおくと
+$$
+\sum_{k=1}^N \sum_{\substack{s, t\\ 0\le s+t < k}} A(s, N/2, k) B(t, N/2, N-k+1)
+$$
+が解である。
+$q$-ポッホハマー記号
+$$
+(a;q)_{n}:=\prod _{k=0}^{n-1}(1-aq^{k})
+$$
+を用いて
+\begin{align*}
+A(s, n, m) &= [a^{m-1} q^s] \frac1{(a;q)_{n}}\\
+B(t, n, m) &= [a^{m-1} q^s] \frac1{(a;q)_{n}(1-aq^{n-1})}
+\end{align*}
+と書ける。$A$ については。この表現を使うと
+\begin{align*}
+&\sum_{k=1}^N \sum_{\substack{s, t\\ 0\le s+t < k}} 
+\left([a^{k-1} q^s] \frac1{(a;q)_{N/2}}\right)
+\left([a^{N-k} q^t] \frac1{(a;q)_{N/2}(1-aq^{N/2-1})}\right)\\
+=& \sum_{k=1}^N \sum_{\substack{s, t\\ 0\le s+t < k}} 
+[a_0^{k-1} a_1^{N-k} q_0^s q_1^t] \frac1{(a_0;q_0)_{N/2}(a_1;q_1)_{N/2}(1-a_1q_1^{N/2-1})}\\
+=& \sum_{k=1}^N 
+[a_0^{k-1} a_1^{N-k} q^{k-1}] \frac1{(1-q)(a_0;q)_{N/2}(a_1;q)_{N/2}(1-a_1q^{N/2-1})}
+\end{align*}
+と式変形できる。
+畳み込みの式に似ているが、$a_0$ と $q$ の2種類の次数 $k-1$ の変数があるのがやっかいである。
+ここで、
+$$
+\frac1{(a_0;q)_{N/2}}
+=
+\frac1{(1-a_0)(1-a_0q)\dotsm(1-a_0q^{N/2-1})}
+$$
+に注目すると、$\frac1{1-a_0}$ を取り除けば、各単項式で $a_0$ の次数は $q$ の次数以下であることが分かる。
+$a_0$ の足りない次数は $\frac1{1-a_0}$ により一通りの方法で補給されるので、$\frac1{1-a_0}$を取り除き、$a_0$ に 1 を代入してよい。
+よって
+\begin{align*}
+& \sum_{k=1}^N [a_1^{N-k} q^{k-1}] \frac1{(1-q)[(1-q)(1-q^2)\dotsm(1-q^{N/2-1})](a_1;q)_{N/2}(1-a_1q^{N/2-1})}\\
+=& [q^{N-1}] \frac1{(1-q)[(1-q)(1-q^2)\dotsm(1-q^{N/2-1})](q;q)_{N/2}(1-q^{N/2})}
+\end{align*}
+となり冒頭の式が得られる。
+<h1>アルゴリズム</h1>
+通常の動的計画法で $O(N^2)$ 時間で計算できる。
+また、各因子の $\log$ をとってから和を取り、 $\exp$ で戻す $O(N\log N)$時間のアルゴリズムがある(<a href="https://drops.dagstuhl.de/opus/frontdoor.php?source_opus=10043">参考</a>)。
+この問題の場合は動的な mod に対する高速フーリエ変換が必要であり、$N$ が大きくないと高速にならない。
+ここでは五角数定理を用いた $O(N^{1.5})$ のアルゴリズムを紹介する。
+分割数の母関数
+$$
+\prod_{n=1}^\infty \frac1{1-q^n}
+$$
+の分母を展開したものを明示的に与えるのが五角数定理である。
+この分母は$N$次までに$O(\sqrt{N})$個しか非ゼロの項が存在しない。
+そのため、愚直に漸化式を更新する方法で $O(N^{1.5})$ 時間で $N$ 項目までの計算ができる。
+
+本問題の $N$ が偶数の場合を考えると
+\begin{align*}
+&[q^{N-1}]\, \frac1{(1-q)[(1-q)(1-q^2)\dotsm(1-q^{N/2})]^2}\\
+=&[q^{N-1}]\, \frac{[(1-q^{N/2+1})\dotsm(1-q^{N-1})]^2}{(1-q)[(1-q)(1-q^2)\dotsm]^2}\\
+=&[q^{N-1}]\, \frac{1-2q^{N/2+1}-\dotsb-2q^{N-1}}{(1-q)[(1-q)(1-q^2)\dotsm]^2}\\
+\end{align*}
+と式変形でき、五角数定理が適用できる形になる。
+分子は都合よく積を展開する計算が省け、線形時間で計算できるようになった。
+そのため全体の計算時間は $O(N^{1.5})$ である。
+<a href="https://atcoder.jp/contests/agc041/submissions/9247148">実装例</a>
+</main>
+<hr/>
+<footer>
+<small>&copy; 2020 Ryuhei Mori</small> このページについての連絡は email: mori[at]c.titech.ac.jp
+</footer>
+</body>
+</html>
