@@ -38,6 +38,12 @@ Title: Computationally-secure and composable remote quantum state preparation
 Abstract: Quantum computers are expected to efficiently solve certain problems that are believed to be computationally intractable to classical computers. This raises the question: how can classical users efficiently verify the results produced by quantum computers? In this talk I will present a protocol between a classical polynomial-time verifier and a quantum polynomial-time prover that allows the verifier to securely delegate to the prover the preparation of certain quantum states. Throughout the protocol, the prover remains oblivious as to which state it was instructed to prepare. I will then show how this remote state preparation primitive can be used by the verifier to delegate general quantum computations to the prover and verify their results.
 The talk is based on joint work with Thomas Vidick: <https://arxiv.org/abs/1904.06320>
 
+### Robert T. König (Technical University of Munich)
+
+Title: Obstacles to State Preparation and Variational Optimization from Symmetry Protection
+
+Abstract: Local Hamiltonians with topological quantum order exhibit highly entangled ground states that cannot be prepared by shallow quantum circuits. Here, we show that this property may extend to all low-energy states in the presence of an on-site Z2 symmetry. This proves a version of the No Low-Energy Trivial States (NLTS) conjecture for a family of local Hamiltonians with symmetry protected topological order. A surprising consequence of this result is that the Goemans-Williamson algorithm outperforms the Quantum Approximate Optimization Algorithm (QAOA) for certain instances of MaxCut, at any constant level. We argue that the locality and symmetry of QAOA severely limits its performance. To overcome these limitations, we propose a non-local version of QAOA, and give numerical evidence that it significantly outperforms standard QAOA for frustrated Ising models on random 3-regular graphs.
+This is joint work with Sergey Bravyi, Alexander Kliesch and Eugene Tang.
 
 ### François Le Gall (Nagoya University)
 
