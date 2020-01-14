@@ -27,7 +27,25 @@ Speakers
 
 Schedule
 ----------------
-TBA.
+
+### 13 Feb.
+
+| Time           | Speaker             | Title |
+|---------------:|:--------------------|-------|
+| 13:00 -- 14:00 | Ansis Rosmanis      |       |
+| 14:10 -- 15:10 | Tomoyuki Morimae    | Fine-grained quantum supremacy |
+| 15:20 -- 16:30 | Robert T. König     | Obstacles to State Preparation and Variational Optimization from Symmetry Protection |
+
+### 14 Feb.
+
+| Time           | Speaker             | Title |
+|---------------:|:--------------------|-------|
+|  9:30 -- 10:30 | Alexandru Gheorghiu | Computationally-secure and composable remote quantum state preparation |
+| 10:40 -- 11:40 | Ryuhei Mori         |       |
+| 13:00 -- 13:35 | Kazuya Shimizu      |       |
+| 13:40 -- 14:40 | Seiichiro Tani      |       |
+| 14:50 -- 15:50 | Jevgēnijs Vihrovs   |       |
+| 16:00 -- 17:00 | François Le Gall    | Quantum Distributed Computing |
 
 Abstracts
 ----------------
