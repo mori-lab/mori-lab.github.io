@@ -34,7 +34,7 @@ Program
 |---------------:|:--------------------|-------|
 | 13:00 -- 14:00 | Ansis Rosmanis      |       |
 | 14:10 -- 15:10 | Tomoyuki Morimae    | Fine-grained quantum supremacy |
-| 15:20 -- 16:30 | Robert T. König     | Obstacles to State Preparation and Variational Optimization from Symmetry Protection |
+| 15:20 -- 16:20 | Robert T. König     | Obstacles to State Preparation and Variational Optimization from Symmetry Protection |
 
 ### 14 Feb.
 
