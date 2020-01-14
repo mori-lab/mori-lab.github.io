@@ -25,7 +25,7 @@ Speakers
 * Seiichiro Tani (NTT Corporation)
 * Jevgēnijs Vihrovs (University of Latvia)
 
-Schedule
+Program
 ----------------
 
 ### 13 Feb.
