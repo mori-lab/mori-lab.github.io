@@ -80,3 +80,17 @@ and the one-clean qubit model, are hard to classically sample unless the polynom
 All these results, however, prohibit only polynomial-time classical simulations. In this talk, we show impossibilities of
 classically simulating quantum computing even in some exponential time assuming several fine-grained complexity conjectures
 such as SETH.
+
+### Ansis Rosmanis (Nagoya University)
+
+Title: Adversary Method Beyond Function Evaluation
+
+Abstract: The adversary method for lower bounding quantum query
+complexity was introduced some 20 years ago. It was subsequently
+strengthened, allowing negative weights in the adversary matrix. Then,
+some 10 years ago, it was shown that this negative-weights adversary
+method can prove optimal bounds for any function-evaluation problem.
+However, the scope of the adversary method goes beyond function
+evaluation. In this talk, I will present some of my recent work in
+this area.
+
