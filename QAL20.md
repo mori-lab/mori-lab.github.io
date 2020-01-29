@@ -32,7 +32,7 @@ Program
 
 | Time           | Speaker             | Title |
 |---------------:|:--------------------|-------|
-| 13:00 -- 14:00 | Ansis Rosmanis      |       |
+| 13:00 -- 14:00 | Ansis Rosmanis      | Adversary Method Beyond Function Evaluation |
 | 14:10 -- 15:10 | Tomoyuki Morimae    | Fine-grained quantum supremacy |
 | 15:20 -- 16:20 | Robert T. König     | Obstacles to State Preparation and Variational Optimization from Symmetry Protection |
 
