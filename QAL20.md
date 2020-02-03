@@ -43,7 +43,7 @@ Program
 |  9:30 -- 10:30 | Alexandru Gheorghiu | Computationally-secure and composable remote quantum state preparation |
 | 10:40 -- 11:40 | Ryuhei Mori         |       |
 | 13:00 -- 13:35 | Kazuya Shimizu      |       |
-| 13:40 -- 14:40 | Seiichiro Tani      |       |
+| 13:40 -- 14:40 | Seiichiro Tani      | Quantum Algorithm for Finding the Optimal Variable Ordering for Binary Decision Diagrams |
 | 14:50 -- 15:50 | Jevgēnijs Vihrovs   |       |
 | 16:00 -- 17:00 | François Le Gall    | Quantum Distributed Computing |
 
@@ -68,7 +68,7 @@ This is joint work with Sergey Bravyi, Alexander Kliesch and Eugene Tang.
 Title: Quantum Distributed Computing
 
 Abstract:
-The subject of this talk will be quantum distributed computing, i.e., distributed computing when the processors of the network can exchange quantum information. After describing the basics of distributed computing, I will explain a result obtained with Frédéric Magniez (arXiv:1804.02917) on quantum algorithms computing the diameter of the network. I will then present others results (arXiv:1810.10838 and arXiv:1908.11488) that show separations between the computational powers of quantum and classical distributed algorithms in several fundamental models of distributed computing. I will conclude my talk by mentioning interesting and important open questions in quantum distributed computing.
+The subject of this talk will be quantum distributed computing, i.e., distributed computing when the processors of the network can exchange quantum information. After describing the basics of distributed computing, I will explain a result obtained with Frédéric Magniez ([arXiv:1804.02917](https://arxiv.org/abs/1804.02917)) on quantum algorithms computing the diameter of the network. I will then present others results ([arXiv:1810.10838](https://arxiv.org/abs/1810.10838) and [arXiv:1908.11488](https://arxiv.org/abs/1908.11488)) that show separations between the computational powers of quantum and classical distributed algorithms in several fundamental models of distributed computing. I will conclude my talk by mentioning interesting and important open questions in quantum distributed computing.
 
 
 ### Tomoyuki Morimae (Kyoto University)
@@ -93,4 +93,11 @@ method can prove optimal bounds for any function-evaluation problem.
 However, the scope of the adversary method goes beyond function
 evaluation. In this talk, I will present some of my recent work in
 this area.
+
+### Seiichiro Tani (NTT Corporation)
+
+Title: Quantum Algorithm for Finding the Optimal Variable Ordering for Binary Decision Diagrams
+
+Abstract:
+The ordered binary decision diagram (OBDD) is one of the data structures that have been most often used for decades to represent Boolean functions in practical situations. Since the early stages of OBDD research, one of the most central problems has been how to find an optimal variable ordering, i.e., one that minimizes OBDDs. In this talk, based on [arXiv:1909.12658](https://arxiv.org/abs/1909.12658), we review OBDDs and present an exponential-time quantum algorithm that is asymptotically better than the best known classical algorithm.
 
