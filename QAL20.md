@@ -21,7 +21,6 @@ Speakers
 * Ryuhei Mori (Tokyo Institute of Technology), Organizer
 * Tomoyuki Morimae (Kyoto University)
 * Ansis Rosmanis (Nagoya University)
-* Kazuya Shimizu (Tokyo Institute of Technology)
 * Seiichiro Tani (NTT Corporation)
 * Jevgēnijs Vihrovs (University of Latvia)
 
@@ -42,7 +41,6 @@ Program
 |---------------:|:--------------------|-------|
 |  9:30 -- 10:30 | Alexandru Gheorghiu | Computationally-secure and composable remote quantum state preparation |
 | 10:40 -- 11:40 | Ryuhei Mori         |       |
-| 13:00 -- 13:35 | Kazuya Shimizu      |       |
 | 13:40 -- 14:40 | Seiichiro Tani      | Quantum Algorithm for Finding the Optimal Variable Ordering for Binary Decision Diagrams |
 | 14:50 -- 15:50 | Jevgēnijs Vihrovs   |       |
 | 16:00 -- 17:00 | François Le Gall    | Quantum Distributed Computing |
