@@ -42,7 +42,7 @@ Program
 |  9:30 -- 10:30 | Alexandru Gheorghiu | Computationally-secure and composable remote quantum state preparation |
 | 10:40 -- 11:40 | Ryuhei Mori         | Quantum nonlocality and quantum computation |
 | 13:40 -- 14:40 | Seiichiro Tani      | Quantum Algorithm for Finding the Optimal Variable Ordering for Binary Decision Diagrams |
-| 14:50 -- 15:50 | Jevgēnijs Vihrovs   |       |
+| 14:50 -- 15:50 | Jevgēnijs Vihrovs   | On Quantum Speedups for Dynamic Programming |
 | 16:00 -- 17:00 | François Le Gall    | Quantum Distributed Computing |
 
 Abstracts
@@ -109,3 +109,13 @@ Title: Quantum Algorithm for Finding the Optimal Variable Ordering for Binary De
 Abstract:
 The ordered binary decision diagram (OBDD) is one of the data structures that have been most often used for decades to represent Boolean functions in practical situations. Since the early stages of OBDD research, one of the most central problems has been how to find an optimal variable ordering, i.e., one that minimizes OBDDs. In this talk, based on [arXiv:1909.12658](https://arxiv.org/abs/1909.12658), we review OBDDs and present an exponential-time quantum algorithm that is asymptotically better than the best known classical algorithm.
 
+
+### Jevgēnijs Vihrovs (University of Latvia)
+
+Title: On Quantum Speedups for Dynamic Programming
+
+Abstract:
+In this talk, we examine quantum algorithms for NP-complete problems whose best classical algorithm is an exponential time application of dynamic programming. We introduce the path in the hypercube problem that models many of these dynamic programming algorithms.
+In this problem we are asked whether there is a path from $$0^n$$ to $$1^n$$ in a given subgraph of the Boolean hypercube, where the edges are all directed from smaller to larger Hamming weight. We give a quantum algorithm that solves path in the hypercube in time $$O^*(1.817^n)$$.
+The technique combines Grover's search with computing a partial dynamic programming table. We use this approach to solve a variety of vertex ordering problems on graphs in the same time $$O^*(1.817^n)$$, and graph bandwidth in time $$O^*(4.383^n)$$.
+Then we use similar ideas to solve the travelling salesman problem and minimum set cover in time $$O^*(1.728^n)$$. Finally, we will look at some open questions and directions for research.
