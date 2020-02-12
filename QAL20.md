@@ -40,7 +40,7 @@ Program
 | Time           | Speaker             | Title |
 |---------------:|:--------------------|-------|
 |  9:30 -- 10:30 | Alexandru Gheorghiu | Computationally-secure and composable remote quantum state preparation |
-| 10:40 -- 11:40 | Ryuhei Mori         |       |
+| 10:40 -- 11:40 | Ryuhei Mori         | Quantum nonlocality and quantum computation |
 | 13:40 -- 14:40 | Seiichiro Tani      | Quantum Algorithm for Finding the Optimal Variable Ordering for Binary Decision Diagrams |
 | 14:50 -- 15:50 | Jevgēnijs Vihrovs   |       |
 | 16:00 -- 17:00 | François Le Gall    | Quantum Distributed Computing |
@@ -67,6 +67,16 @@ Title: Quantum Distributed Computing
 
 Abstract:
 The subject of this talk will be quantum distributed computing, i.e., distributed computing when the processors of the network can exchange quantum information. After describing the basics of distributed computing, I will explain a result obtained with Frédéric Magniez ([arXiv:1804.02917](https://arxiv.org/abs/1804.02917)) on quantum algorithms computing the diameter of the network. I will then present others results ([arXiv:1810.10838](https://arxiv.org/abs/1810.10838) and [arXiv:1908.11488](https://arxiv.org/abs/1908.11488)) that show separations between the computational powers of quantum and classical distributed algorithms in several fundamental models of distributed computing. I will conclude my talk by mentioning interesting and important open questions in quantum distributed computing.
+
+### Ryuhei Mori (Tokyo Institute of Technology)
+
+Title: Quantum nonlocality and quantum computation
+
+Abstract:
+Quantum nonlocality is one of the most important feature of quantum physics.
+From the discovery of the violation of Bell (CHSH) inequality, many types of Bell inequalities have been found and considered.
+In this talk, we consider how the quantum nonlocality can be regarded as resource of computation,
+and show relationship with recent developments on separations of complexity classes defined by quantum shallow circuits and classical shallow circuits.
 
 
 ### Tomoyuki Morimae (Kyoto University)
