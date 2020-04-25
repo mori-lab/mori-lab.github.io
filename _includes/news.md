@@ -1,3 +1,4 @@
+* <span class="date">2020年4月25日</span> メンバーを更新しました
 * <span class="date">2019年4月18日</span> メンバーを更新しました
 * <span class="date">2018年9月26日</span> メンバーを更新しました
 * <span class="date">2018年9月18日</span> 森助教の研究がJSTさきがけに採択されました
