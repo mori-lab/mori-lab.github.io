@@ -67,17 +67,17 @@ $N=0$ のときは $P(0)$ が解である。
 すると、 $N$ が偶数のときは
 \begin{align*}
 [x^N] \frac{P(x)Q(-x)}{V(x^2)}
-&=
+=
 [x^N] \frac{U_e(x^2)}{V(x^2)}
-&=
+=
 [x^{N/2}] \frac{U_e(x)}{V(x)}
 \end{align*}
 同様に $N$ が奇数のときは
 \begin{align*}
 [x^N] \frac{P(x)}{Q(x)}
-&=
+=
 [x^N] \frac{xU_o(x^2)}{V(x^2)}
-&=
+=
 [x^{(N-1)/2}] \frac{U_o(x)}{V(x)}
 \end{align*}
 よって次の漸化式が得られる。
@@ -85,7 +85,7 @@ $$
 [x^N] \frac{P(x)}{Q(x)}
 =
 \begin{cases}
-P(0),&\test{if $N = 0$}\\
+P(0),&\text{if $N = 0$}\\
 [x^{\frac{N}{2}}] \frac{U_e(x)}{V(x)},&\text{if $N$ is even}\\
 [x^{\frac{N-1}{2}}] \frac{U_o(x)}{V(x)},&\text{otherwise}
 \end{cases}
