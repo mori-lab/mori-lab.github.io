@@ -1,4 +1,4 @@
-* <span class="date">2021年1月14日</span> 修士2年の近藤 泰大さんが <a ref="https://www.ieice.org/es/qit/text/award/qit43award.pdf">第43回量子情報技術研究会  学生発表賞</a>を受賞しました
+* <span class="date">2021年1月14日</span> 修士2年の近藤 泰大さんが <a href="https://www.ieice.org/es/qit/text/award/qit43award.pdf">第43回量子情報技術研究会  学生発表賞</a>を受賞しました
 * <span class="date">2020年4月25日</span> メンバーを更新しました
 * <span class="date">2019年4月18日</span> メンバーを更新しました
 * <span class="date">2018年9月26日</span> メンバーを更新しました
