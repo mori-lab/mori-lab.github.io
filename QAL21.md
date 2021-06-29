@@ -3,7 +3,7 @@ layout: qal
 title: Quantum Algorithms and Lower Bounds 2021
 ---
 
-Workshop on Quantum Algorithms and Lower Bounds
+Workshop on Quantum Algorithms and Lower Bounds 2021
 ================
 
 Date and venue
