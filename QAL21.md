@@ -33,6 +33,6 @@ Abstract:
 Quantum channel discrimination is a fundamental problem in quantum information science.
 In this work, we consider general quantum channel discrimination problems, and show lower bounds of the error probability.
 Our lower bounds are based on the triangle inequalities of the Bures angle and the trace distance.
-As a consequence, we show the optimality of Grover's search if the number of marked elements is fixed to some integer $k$.
-This result generalizes Zalka's result for $k=1$.
+As a consequence, we show the optimality of Grover's search if the number of marked elements is fixed to some integer $$k$$.
+This result generalizes Zalka's result for $$k=1$$.
 We also show several numerical results in which our lower bounds outperform recently obtained lower bounds.
