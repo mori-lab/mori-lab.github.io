@@ -16,6 +16,7 @@ Speakers
 * François Le Gall (Nagoya University)
 * Ryuhei Mori (Tokyo Institute of Technology), Organizer
 * Tomoyuki Morimae (Kyoto University)
+* Ramis Movassagh (IBM Quantum, MIT-IBM AI Research lab)
 * Seiichiro Tani (NTT Corporation)
 
 Program
