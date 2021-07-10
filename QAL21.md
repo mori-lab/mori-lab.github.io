@@ -37,8 +37,8 @@ and derive the lower bounds of the error probability.
 Our lower bounds are based on the triangle inequalities of the Bures angle
 and the trace distance.
 As a consequence of the lower bound based on the Bures angle, we prove the
-optimality of Grover's search if the number of marked elements is fixed to some integer $k$.
-This result generalizes Zalka's result for $k=1$.
+optimality of Grover's search if the number of marked elements is fixed to some integer $$k$$.
+This result generalizes Zalka's result for $$k=1$$.
 We also present several numerical results in which our lower bounds based
 on the trace distance outperform recently obtained lower bounds.
 This is join work with Ryo Ito [arXiv:2107.03948](https://arxiv.org/abs/2107.03948).
