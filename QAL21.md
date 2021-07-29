@@ -8,7 +8,7 @@ Workshop on Quantum Algorithms and Lower Bounds 2021
 
 Date and venue
 ----------------
- Aug. or Sep. 2021, Online
+ Sep. 2021, Online
 
 
 Speakers
