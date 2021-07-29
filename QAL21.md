@@ -13,6 +13,7 @@ Date and venue
 
 Speakers
 ----------------
+* Sergey Bravyi (IBM)
 * François Le Gall (Nagoya University)
 * Ryuhei Mori (Tokyo Institute of Technology), Organizer
 * Tomoyuki Morimae (Kyoto University)
