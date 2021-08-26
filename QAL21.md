@@ -58,7 +58,13 @@ The first few values of $$T_D$$ are $$T_1 \approx 1.817$$, $$T_2 \approx 2.660$$
 We also prove that $$T_D \ge (D+1)/e$$ (here, $$e \approx 2.718$$ is the Euler’s number), thus for general $$D$$, this algorithm does not provide, for example, a speedup, polynomial in the size of the lattice.
 While the presented quantum algorithm is a natural generalization of the known quantum algorithm for $$D = 1$$ by Ambainis et al., the analysis of complexity is rather complicated.
 For the precise analysis, we use the saddle-point method, which is a common tool in analytic combinatorics, but has not been widely used in this field.
-We then show an implementation of this algorithm with time and space complexity $$\mathsf{poly}(n)^{\log n} T_D^n$$ in the QRAM model, and apply it to the Set Multicover problem.
+We then show an implementation of this algorithm with time and space complexity $$\mathrm{poly}(n)^{\log n} T_D^n$$ in the QRAM model, and apply it to the Set Multicover problem.
 In this problem, $$m$$ subsets of $$[n]$$ are given, and the task is to find the smallest number of these subsets that cover each element of $$[n]$$ at least $$D$$ times.
-While the time complexity of the best known classical algorithm is $$O(m(D+1)^n)$$, the time complexity of our quantum algorithm is $$\mathsf{poly}(m,n)^{\log n} T_D^n$$.
-This is joint work with Adam Glos, Martins Kokainis, and Ryuhei Mori.
+While the time complexity of the best known classical algorithm is $$O(m(D+1)^n)$$, the time complexity of our quantum algorithm is $$\mathrm{poly}(m,n)^{\log n} T_D^n$$.
+This is joint work with Adam Glos, Martins Kokainis, and Ryuhei Mori [MFCS 2021](https://doi.org/10.4230/LIPIcs.MFCS.2021.50).
+
+
+Link
+----------------
+[QAL20](./QAL20)
+
