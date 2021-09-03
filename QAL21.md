@@ -28,6 +28,21 @@ Program
 Abstracts
 ----------------
 
+### Sergey Bravyi (IBM)
+
+Title: Quantum advantage for computations with limited space
+
+Abstract:
+Quantum computers promise the ability to solve problems that are intractable in the classical setting, but in many cases this is not rigorously proven.
+It is often possible to establish a provable theoretical advantage for quantum computations by restricting the computational power.
+In multiple cases, quantum advantage over these restricted models was demonstrated experimentally.
+Here we consider space-restricted computations that use only one computational classical or quantum bit with a read-only memory as input.
+We show that $$n$$-bit symmetric Boolean functions can be implemented exactly in this framework through the use of quantum signal processing and $$O(n^2)$$ gates,
+but in the analogous classical computations some of the functions may only be evaluated with probability $$1/2+O(n/\sqrt{2}^n)$$.
+We experimentally demonstrate computations of three-bit to six-bit symmetric Boolean functions by quantum circuits with an algorithmic success probability that exceeds the classical limit.
+This shows that in computations, quantum scrap space offers an advantage over analogous classical space, and calls for an in-depth exploration of space–time trade-offs in quantum circuits.
+This is join work with Dmitri Maslov, Jin-Sung Kim, Theodore J. Yoder and Sarah Sheldon  [Nature Physics](https://www.nature.com/articles/s41567-021-01271-7).
+
 ### Ryuhei Mori (Tokyo Institute of Technology)
 
 Title: Lower bounds on error probability of quantum channel discrimination by the Bures angle and the trace distance
