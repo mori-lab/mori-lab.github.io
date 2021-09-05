@@ -24,6 +24,27 @@ Speakers
 Program
 ----------------
 
+The timezone is JST (UTC+9).
+
+### 21 Sept.
+
+| Time           | Speaker             | Title |
+|---------------:|:--------------------|-------|
+| 10:00 -- 11:00 | Ramis Movassagh     | |
+| 11:10 -- 12:10 | Tomoyuki Morimae    | |
+| 14:00 -- 15:00 | Seiichiro Tani      | |
+| 15:10 -- 16:10 | | |
+
+### 22 Sept.
+
+| Time           | Speaker             | Title |
+|---------------:|:--------------------|-------|
+| 10:00 -- 11:00 | Sergey Bravyi       | Quantum advantage for computations with limited space |
+| 11:10 -- 12:10 | Ryuhei Mori         | Lower bounds on error probability of quantum channel discrimination by the Bures angle and the trace distance |
+| 14:00 -- 15:00 | François Le Gall    | |
+| 15:10 -- 16:10 | Jevgēnijs Vihrovs   | Quantum speedups for dynamic programming on $$n$$-dimensional lattice graphs |
+
+
 
 Abstracts
 ----------------
@@ -62,7 +83,7 @@ This is join work with Ryo Ito [arXiv:2107.03948](https://arxiv.org/abs/2107.039
 
 ### Jevgēnijs Vihrovs (University of Latvia)
 
-Title: Quantum Speedups for Dynamic Programming on $$n$$-Dimensional Lattice Graphs
+Title: Quantum speedups for dynamic programming on $$n$$-dimensional lattice graphs
 
 Abstract:
 Motivated by the quantum speedup for dynamic programming on the Boolean hypercube by Ambainis et al. (2019), we investigate which graphs admit a similar quantum advantage.
