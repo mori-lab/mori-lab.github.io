@@ -31,7 +31,7 @@ The timezone is JST (UTC+9).
 | Time           | Speaker             | Title |
 |---------------:|:--------------------|-------|
 | 10:00 -- 11:00 | Ramis Movassagh     | |
-| 11:10 -- 12:10 | Tomoyuki Morimae    | |
+| 11:10 -- 12:10 | Tomoyuki Morimae    | Quantum Encryption with Certified Deletion, Revisited: Public Key, Attribute-Based, and Classical Communication |
 | 14:00 -- 15:00 | Seiichiro Tani      | |
 | 15:10 -- 16:10 | | |
 
@@ -41,7 +41,7 @@ The timezone is JST (UTC+9).
 |---------------:|:--------------------|-------|
 | 10:00 -- 11:00 | Sergey Bravyi       | Quantum advantage for computations with limited space |
 | 11:10 -- 12:10 | Ryuhei Mori         | Lower bounds on error probability of quantum channel discrimination by the Bures angle and the trace distance |
-| 14:00 -- 15:00 | François Le Gall    | |
+| 14:00 -- 15:00 | François Le Gall    | Test of Quantumness with Small-Depth Quantum Circuits |
 | 15:10 -- 16:10 | Jevgēnijs Vihrovs   | Quantum speedups for dynamic programming on $$n$$-dimensional lattice graphs |
 
 
