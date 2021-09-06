@@ -64,6 +64,14 @@ We experimentally demonstrate computations of three-bit to six-bit symmetric Boo
 This shows that in computations, quantum scrap space offers an advantage over analogous classical space, and calls for an in-depth exploration of space–time trade-offs in quantum circuits.
 This is join work with Dmitri Maslov, Jin-Sung Kim, Theodore J. Yoder and Sarah Sheldon  [Nature Physics](https://www.nature.com/articles/s41567-021-01271-7).
 
+### François Le Gall (Nagoya University)
+
+Title: Test of Quantumness with Small-Depth Quantum Circuits
+
+Abstract:
+Recently Brakerski, Christiano, Mahadev, Vazirani and Vidick (FOCS 2018) have shown how to construct a test of quantumness based on the learning with errors (LWE) assumption: a test that can be solved efficiently by a quantum computer but cannot be solved by a classical polynomial-time computer under the LWE assumption. This test has lead to several cryptographic applications. In particular, it has been applied to producing certifiable randomness from a single untrusted quantum device, self-testing a single quantum device and device-independent quantum key distribution.
+In this paper, we show that this test of quantumness, and essentially all the above applications, can actually be implemented by a very weak class of quantum circuits: constant-depth quantum circuits combined with logarithmic-depth classical computation. This reveals novel complexity-theoretic properties of this fundamental test of quantumness and gives new concrete evidence of the superiority of small-depth quantum circuits over classical computation.
+
 ### Ryuhei Mori (Tokyo Institute of Technology)
 
 Title: Lower bounds on error probability of quantum channel discrimination by the Bures angle and the trace distance
@@ -80,6 +88,25 @@ This result generalizes Zalka's result for $$k=1$$.
 We also present several numerical results in which our lower bounds based
 on the trace distance outperform recently obtained lower bounds.
 This is join work with Ryo Ito [arXiv:2107.03948](https://arxiv.org/abs/2107.03948).
+
+### Tomoyuki Morimae (Kyoto University)
+
+Title: Quantum Encryption with Certified Deletion, Revisited: Public Key, Attribute-Based, and Classical Communication
+
+Abstract:
+Broadbent and Islam (TCC '20) proposed a quantum cryptographic primitive called quantum encryption with certified deletion.
+In this primitive, a receiver in possession of a quantum ciphertext can generate a classical certificate that the encrypted message is deleted. 
+Although their construction is information-theoretically secure, there are two disadvantages:
+
+1. The sender has to generate a quantum state and send it to the receiver over a quantum channel.
+1. The verification of the deletion certificate is private.
+
+In this talk, we solve these two problems.
+
+1. We construct a scheme with classical communication based on the LWE assumption.
+1. We construct a publicly verifiable one by using the one-shot signatures and extractable witness encryption for NP.
+
+This is the joint work with Taiga Hiroka, Ryo Nishimaki, and Takashi Yamakawa [arXiv:2105.05393](https://arxiv.org/abs/2105.05393) (Accepted in ASIACRYPT2021).
 
 ### Jevgēnijs Vihrovs (University of Latvia)
 
