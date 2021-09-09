@@ -10,9 +10,9 @@ Date and venue
 ----------------
 21--22 Sept. 2021, Online
 
-[Registration Day 1](https://us06web.zoom.us/meeting/register/tZ0qdeuhpz4tGdzz39ax364IZehznHXtGe3F)
+[Registration Day 1 (21 Sept.)](https://us06web.zoom.us/meeting/register/tZ0qdeuhpz4tGdzz39ax364IZehznHXtGe3F)
 
-[Registration Day 2](https://us06web.zoom.us/meeting/register/tZYlf-mvqzMsEtQovC49pEIy0X8eRq4mgex-)
+[Registration Day 2 (22 Sept.)](https://us06web.zoom.us/meeting/register/tZYlf-mvqzMsEtQovC49pEIy0X8eRq4mgex-)
 
 
 Speakers
