@@ -34,7 +34,7 @@ The timezone is JST (UTC+9).
 
 | Time           | Speaker             | Title |
 |---------------:|:--------------------|-------|
-| 10:00 -- 11:00 | Ramis Movassagh     | |
+| 10:00 -- 11:00 | Ramis Movassagh     | Improved robustness of quantum supremacy for random circuit sampling |
 | 11:10 -- 12:10 | Tomoyuki Morimae    | Quantum Encryption with Certified Deletion, Revisited: Public Key, Attribute-Based, and Classical Communication |
 | 14:00 -- 15:00 | Seiichiro Tani      | |
 | 15:10 -- 16:10 | | |
@@ -111,6 +111,21 @@ In this talk, we solve these two problems.
 1. We construct a publicly verifiable one by using the one-shot signatures and extractable witness encryption for NP.
 
 This is the joint work with Taiga Hiroka, Ryo Nishimaki, and Takashi Yamakawa [arXiv:2105.05393](https://arxiv.org/abs/2105.05393) (Accepted in ASIACRYPT2021).
+
+### Ramis Movassagh (IBM Quantum, MIT-IBM AI Research lab)
+
+Title: Improved robustness of quantum supremacy for random circuit sampling
+
+Abstract:
+Motivated by the recent experimental demonstrations of quantum supremacy, proving the hardness of the output of random quantum circuits is an imperative near term goal.
+We prove under the complexity theoretical assumption of the non-collapse of the polynomial hierarchy that approximating the output probabilities of random quantum circuits
+to within $$\exp(-\Omega(m\log m))$$ additive error is hard for any classical computer, where $$m$$ is the number of gates in the quantum computation.
+More precisely, we show that the above problem is $$\#\mathsf{P}$$-hard under $$\mathsf{BPP}^{\mathsf{NP}}$$ reduction.
+In the recent experiments, the quantum circuit has $$n$$-qubits and the architecture is a two-dimensional grid of size $$\sqrt{n}\times\sqrt{n}$$.
+Indeed for constant depth circuits approximating the output probabilities to within $$2^{-\Omega(n\log{n})}$$ is hard. For circuits of depth $$\log{n}$$ or $$\sqrt{n}$$ for which the anti-concentration property holds,
+approximating the output probabilities to within $$2^{-\Omega(n\log^2{n})}$$ and $$2^{-\Omega(n^{3/2}\log n)}$$ is hard respectively.
+We made an effort to find the best proofs and proved these results from first principles, which do not use the standard techniques such as the Berlekamp--Welch algorithm, the usual Paturi's lemma, and Rakhmanov's result. 
+This is joint work with Yasuhiro Kondo and Ryuhei Mori [arXiv:2102.01960](https://arxiv.org/abs/2102.01960) (Accepted in FOCS2021).
 
 ### Jevgēnijs Vihrovs (University of Latvia)
 
