@@ -36,8 +36,7 @@ The timezone is JST (UTC+9).
 |---------------:|:--------------------|-------|
 | 10:00 -- 11:00 | Ramis Movassagh     | Improved robustness of quantum supremacy for random circuit sampling |
 | 11:10 -- 12:10 | Tomoyuki Morimae    | Quantum Encryption with Certified Deletion, Revisited: Public Key, Attribute-Based, and Classical Communication |
-| 14:00 -- 15:00 | Seiichiro Tani      | |
-| 15:10 -- 16:10 | | |
+| 14:00 -- 15:00 | Seiichiro Tani      | On the average-case quantum hardness of collision problems |
 
 ### 22 Sept.
 
