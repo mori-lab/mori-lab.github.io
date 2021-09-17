@@ -127,6 +127,20 @@ approximating the output probabilities to within $$2^{-\Omega(n\log^2{n})}$$ and
 We made an effort to find the best proofs and proved these results from first principles, which do not use the standard techniques such as the Berlekamp--Welch algorithm, the usual Paturi's lemma, and Rakhmanov's result. 
 This is joint work with Yasuhiro Kondo and Ryuhei Mori [arXiv:2102.01960](https://arxiv.org/abs/2102.01960) (Accepted in FOCS2021).
 
+
+### Seiichiro Tani (NTT Corporation)
+
+Title: On the average-case quantum hardness of collision problems
+
+Abstract：
+Finding collisions or multicollisions is a fundamental problem in theoretical computer science and one of the most central problems in cryptography. For given finite sets $$X$$ and $$Y$$ with $$|Y| = N$$,
+and a function $$F \colon X \to Y$$, the l-collision finding problem is to find a set of l distinct inputs $$x_1,\dotsc,x_l$$ such that $$F(x_1)=\dotsb=F(x_l)$$.
+Bounding query and time complexities of the $$l$$-collision finding problem is fundamental and has several applications.
+In this talk, we first briefly review the current status of collision problems in various settings, and then present a quantum algorithm that finds an $$l$$-collision for a given random function.
+This algorithm has an optimal time/query complexity, up to a logarithmic factor, in the setting where the size of the function domain is sufficiently large.
+We then discuss the limit of this algorithm, open problems, and the relationship between the average-case and worst-case settings.
+This talk is partly based on [arXiv:1911.02822](htpps://arxiv.org/abs/1911.02822) (A draft version of Theoretical Computer Science, 842:100-117, (2020)).
+
 ### Jevgēnijs Vihrovs (University of Latvia)
 
 Title: Quantum speedups for dynamic programming on $$n$$-dimensional lattice graphs
