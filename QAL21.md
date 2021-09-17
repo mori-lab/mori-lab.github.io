@@ -138,7 +138,7 @@ Bounding query and time complexities of the $$l$$-collision finding problem is f
 In this talk, we first briefly review the current status of collision problems in various settings, and then present a quantum algorithm that finds an $$l$$-collision for a given random function.
 This algorithm has an optimal time/query complexity, up to a logarithmic factor, in the setting where the size of the function domain is sufficiently large.
 We then discuss the limit of this algorithm, open problems, and the relationship between the average-case and worst-case settings.
-This talk is partly based on [arXiv:1911.02822](htpps://arxiv.org/abs/1911.02822) (A draft version of Theoretical Computer Science, 842:100-117, (2020)).
+This talk is partly based on [arXiv:1911.02822](https://arxiv.org/abs/1911.02822) (A draft version of Theoretical Computer Science, 842:100-117, (2020)).
 
 ### Jevgēnijs Vihrovs (University of Latvia)
 
