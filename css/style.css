@@ -113,10 +113,6 @@ nav ul a { color: rgb(0, 0, 128); text-decoration: none; display: block; }
 #research ul li { float: none; width: 190px; line-height: 40px; text-align: left; padding-left: 10px; }
 #research:hover > ul { display: block; }
 
-#link ul { display: none; position: absolute; top: 100%; right: 0; background: white; padding 0; width: 300px; padding-top:1em; border: 2px black solid; }
-#link ul li { float: none; width: 290px; line-height: 40px; text-align: left; padding-left: 10px; }
-#link:hover > ul { display: block; }
-
 nav ul li:hover {
   background: rgb(0, 0, 128);
 }
