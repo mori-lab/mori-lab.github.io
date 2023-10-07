@@ -48,6 +48,7 @@ CHSH確率が $$0.908$$ 以下でなくてはならないことになる。
 
 ### 学生の研究テーマ ###
 
+* 量子消失通信路における量子LDPC符号の復号法
 * 最適なquantum channel encoding
 * 任意の交換・反交換関係を持つ行列の集合
 * Generalized GHZ state の parallel self-testing

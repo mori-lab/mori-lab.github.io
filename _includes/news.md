@@ -1,3 +1,4 @@
+* <span class="date">2023年4月1日</span> 森立平が名古屋大学大学院多元数理科学研究科に着任しました
 * <span class="date">2022年4月1日</span> メンバーを更新しました
 * <span class="date">2021年11月26日</span> 森助教の研究がJST創発的研究支援事業に採択されました
 * <span class="date">2021年6月24日</span> 修士2年の伊藤 凌さんが <a href="https://www.ieice.org/es/qit/text/award/qit44award.pdf">第44回量子情報技術研究会  学生発表賞</a>を受賞しました
