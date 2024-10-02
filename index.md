@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 森 研究室 | 東工大 情報理工学院 数理・計算科学系
+title: 森 研究室 | 名古屋大学 多元数理科学研究科
 ---
 
 <div markdown="1" id="news">
