@@ -11,7 +11,7 @@ title: 教員紹介
 
 Email: mori [at] math.nagoya-u.ac.jp
 
-[論文など](./mori/)
+[個人ページ](https://ryuhei-mori.github.io/)
 
 専門
 ----------------
