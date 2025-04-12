@@ -5,23 +5,25 @@ import { Image } from 'astro:assets';
 import logo from '../assets/logo.svg';
 ---
 
-<header class="flex p-5  gap-5 justify-between">
+<header class="flex p-5  gap-5">
   <Astronav>
+  <div class="flex lg:items-center">
     <div class="flex">
       <div class="block lg:hidden">
         <MenuIcon class="w-12 h-12 text-gray-800 dark:invert" />
       </div>
-      <MenuItems class="hidden lg:flex">
-        <ul class="flex flex-col lg:flex-row lg:gap-5 lg:items-center max-lg:space-y-10 text-6xl lg:text-2xl">
-          <li class="max-lg:hidden lg:mr-4"><a href="/"><Image class="h-12 w-12 dark:invert" alt="Logo" src={logo}/></a></li>
-          <li class="lg:hidden"><a class="no-underline text-current" href="/">ホーム</a></li>
-          <li class="lg:mr-8"><a class="no-underline text-current" href="/profile">教員紹介</a></li>
-          <li class="lg:mr-8"><a class="no-underline text-current" href="/members">メンバー</a></li>
-          <li class="lg:mr-8"><a class="no-underline text-current" href="/qintro">量子力学入門</a></li>
-          <li class="lg:mr-8"><a class="no-underline text-current" href="/research">研究紹介</a></li>
-          <li><ThemeIcon /></li>
-        </ul>
-      </MenuItems>
     </div>
+    <MenuItems class="hidden lg:flex">
+      <ul class="flex flex-col lg:flex-row lg:gap-5 lg:items-center max-lg:space-y-10 text-6xl lg:text-2xl">
+        <li class="max-lg:hidden lg:mr-4"><a href="/"><Image class="h-12 w-12 dark:invert" alt="Logo" src={logo}/></a></li>
+        <li class="lg:hidden"><a class="no-underline text-current" href="/">ホーム</a></li>
+        <li class="lg:mr-8"><a class="no-underline text-current" href="/profile">教員紹介</a></li>
+        <li class="lg:mr-8"><a class="no-underline text-current" href="/members">メンバー</a></li>
+        <li class="lg:mr-8"><a class="no-underline text-current" href="/qintro">量子力学入門</a></li>
+        <li class="lg:mr-8"><a class="no-underline text-current" href="/research">研究紹介</a></li>
+      </ul>
+    </MenuItems>
+    <div class="ml-8"><ThemeIcon class="w-12 h-12 lg:w-8 lg:h-8"/></div>
+  </div>
   </Astronav>
 </header>
