@@ -12,7 +12,9 @@ import logo from '../assets/logo.svg';
         <MenuIcon class="w-12 h-12 text-gray-800 dark:invert" />
       </div>
       <MenuItems class="hidden lg:flex">
-        <ul class="flex flex-col lg:flex-row lg:gap-5 max-lg:space-y-10 text-6xl lg:text-2xl">
+        <ul class="flex flex-col lg:flex-row lg:gap-5 lg:items-center max-lg:space-y-10 text-6xl lg:text-2xl">
+          <li class="max-lg:hidden lg:mr-4"><a href="/"><Image class="h-12 w-12 dark:invert" alt="Logo" src={logo}/></a></li>
+          <li class="lg:hidden"><a class="no-underline text-current" href="/">ホーム</a></li>
           <li class="lg:mr-8"><a class="no-underline text-current" href="/profile">教員紹介</a></li>
           <li class="lg:mr-8"><a class="no-underline text-current" href="/members">メンバー</a></li>
           <li class="lg:mr-8"><a class="no-underline text-current" href="/qintro">量子力学入門</a></li>
@@ -20,9 +22,6 @@ import logo from '../assets/logo.svg';
           <li><ThemeIcon /></li>
         </ul>
       </MenuItems>
-    </div>
-    <div>
-        <h1><a class="no-underline text-current" href="/"><span class="text-lg">名古屋大学 多元数理科学研究科</span> 森研究室</a></h1>
     </div>
   </Astronav>
 </header>
