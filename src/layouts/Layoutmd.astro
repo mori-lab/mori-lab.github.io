@@ -1,0 +1,29 @@
+---
+import "../styles/global.css";
+import Navbar from '../components/Navbar.astro'
+const {frontmatter } = Astro.props;
+---
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>{frontmatter.title}</title>
+  <link rel="icon" sizes="any" href="./favicon.svg" type="image/svg+xml">
+</head>
+<body class="bg-white text-black dark:bg-black dark:text-white p-8">
+  <Navbar />
+  <main class="mt-8 ml-4">
+    <slot />
+  </main>
+  <footer class="mt-8 ml-4">
+    <div>
+      名古屋大学 多元数理科学研究科
+      <address>
+        〒464 - 8602
+        愛知県名古屋市千種区不老町
+        多元数理科学棟 402号室
+      </address>
+    </div>
+  </footer>
+</body>
+</html>

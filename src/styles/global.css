@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import 'katex/dist/katex.min.css';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  h1 {
+    @apply text-4xl font-black mb-4;
+  }
+  h2 {
+    @apply text-2xl font-black mb-2 mt-6;
+  }
+  h3 {
+    @apply text-xl font-black mb-1 mt-4;
+  }
+  a {
+    color: revert;
+    text-decoration: revert;
+    @apply dark:text-blue-400 dark:visited:text-purple-400;
+  }
+  img {
+    @apply inline;
+  }
+  table {
+    @apply border-separate border-spacing-x-12;
+  }
+}

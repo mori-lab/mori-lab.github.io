@@ -1,0 +1,28 @@
+---
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import ThemeIcon from './ThemeIcon.astro';
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.svg';
+---
+
+<header class="lg:flex p-5  gap-5 justify-between">
+  <Astronav>
+    <div class="flex">
+      <div class="block lg:hidden">
+        <MenuIcon class="w-12 h-12 text-gray-800 dark:invert" />
+      </div>
+      <MenuItems class="hidden lg:flex">
+        <ul class="flex flex-col lg:flex-row lg:gap-5 max-lg:space-y-10 text-6xl lg:text-2xl">
+          <li role="menuitem"><a class="no-underline text-current" href="/profile">教員紹介</a></li>
+          <li role="menuitem"><a class="no-underline text-current" href="/members">メンバー</a></li>
+          <li role="menuitem"><a class="no-underline text-current" href="/qintro">量子力学入門</a></li>
+          <li role="menuitem"><a class="no-underline text-current" href="/research">研究紹介</a></li>
+          <li><ThemeIcon />
+        </ul>
+      </MenuItems>
+    </div>
+    <div>
+        <h1><a class="no-underline text-current" href="./index.html"><span class="text-lg">名古屋大学 多元数理科学研究科</span> 森研究室</a></h1>
+    </div>
+  </Astronav>
+</header>
