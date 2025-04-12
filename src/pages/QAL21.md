@@ -161,5 +161,5 @@ This is joint work with Adam Glos, Martins Kokainis, and Ryuhei Mori [MFCS 2021]
 
 Link
 ----------------
-[QAL20](./QAL20)
+[QAL20](/QAL20)
 
