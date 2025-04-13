@@ -10,7 +10,7 @@
     @apply text-2xl font-black mb-2 mt-6;
   }
   h3 {
-    @apply text-xl font-black mb-1 mt-4;
+    @apply text-xl font-black my-4;
   }
   a {
     color: revert;
