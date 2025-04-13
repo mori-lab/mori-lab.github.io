@@ -2,6 +2,9 @@
 @import 'katex/dist/katex.min.css';
 @custom-variant dark (&:where(.dark, .dark *));
 
+@source not "../assets/";
+@source not "../../public/";
+
 @layer base {
   h1 {
     @apply text-4xl font-black mb-4;
