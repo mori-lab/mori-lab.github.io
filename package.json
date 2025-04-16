@@ -2,6 +2,7 @@
   "name": "new-mori-lab-github-io",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@10.8.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -16,6 +17,7 @@
     "katex": "^0.16.22",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
+    "sharp": "^0.34.1",
     "tailwindcss": "^4.1.3"
   }
 }
