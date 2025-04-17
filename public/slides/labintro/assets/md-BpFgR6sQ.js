@@ -1,4 +1,4 @@
-import{b as S,o as g,w as y,i,g as I,ad as j,v as D,x as U,S as N}from"./modules/vue-DK5eyw4o.js";import{I as s}from"./slidev/default-BFfzFTOp.js";import{u as a,f as t}from"./slidev/context-HRrPC0EX.js";import"./index-UbSRqeS5.js";import"./modules/shiki-D78l-cVJ.js";const A="/CHSH.svg",E={__name:"slides.md__slidev_5",setup(m){const{$clicksContext:u,$frontmatter:L}=a();return u.setup(),(l,M)=>(g(),S(s,D(U(N(t)(N(L),4))),{default:y(()=>[i(` 
+import{b as S,o as g,w as y,i,g as I,ad as j,v as D,x as U,S as N}from"./modules/vue-DK5eyw4o.js";import{I as s}from"./slidev/default-DgwrakWx.js";import{u as a,f as t}from"./slidev/context-BGbrnEkD.js";import"./index-zPM0z15b.js";import"./modules/shiki-D78l-cVJ.js";const A="/slides/labintro/CHSH.svg",E={__name:"slides.md__slidev_5",setup(m){const{$clicksContext:u,$frontmatter:L}=a();return u.setup(),(l,M)=>(g(),S(s,D(U(N(t)(N(L),4))),{default:y(()=>[i(` 
 # 具体例: 光の波動性 (二重スリットの実験)
 
 <img class="w-1/2 mx-auto" src="/double-slit.png">
