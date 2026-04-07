@@ -12,9 +12,9 @@
   "dependencies": {
     "@astrojs/mdx": "^5.0.3",
     "@tailwindcss/vite": "^4.2.2",
-    "astro": "^6.1.2",
+    "astro": "^6.1.4",
     "astro-navbar": "^2.4.0",
-    "katex": "^0.16.44",
+    "katex": "^0.16.45",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
     "sharp": "^0.34.5",
