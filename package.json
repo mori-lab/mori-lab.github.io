@@ -2,7 +2,7 @@
   "name": "new-mori-lab-github-io",
   "type": "module",
   "version": "0.0.1",
-  "packageManager": "pnpm@10.33.3+sha512.a19744364a7e248b92657a4ca5973f9354d21caf982579674b1c539f32c7420c47138ad8b1254df07aba9bc782d9b3029e3db34d5dbff974326eb74dac8ff489",
+  "packageManager": "pnpm@11.25.0+sha512.5cde925b4f075f725eb71fbae18a42ffe784524789f19b61c731cb8721ec28aaee160e01a8d5af4fedb2a42cdbf300efe23db356b0d4a17b4d63e11f8ab7c956",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -10,14 +10,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^5.0.4",
-    "@tailwindcss/vite": "^4.2.4",
-    "astro": "^6.2.2",
+    "@astrojs/mdx": "^5.0.6",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^6.4.8",
     "astro-navbar": "^2.4.0",
-    "katex": "^0.16.45",
+    "katex": "^0.16.47",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",
     "sharp": "^0.34.5",
-    "tailwindcss": "^4.2.4"
+    "tailwindcss": "^4.3.3"
   }
 }
